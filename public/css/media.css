@@ -1,0 +1,672 @@
+@media(max-width: 1024px) {
+    .logo {
+        margin: 0 6vw;
+    }
+
+    .logo_firstword {
+        font-size: 5.5vw;
+    }
+
+    .logo_otherwords {
+        font-size: 2.55vw;
+    }
+
+    .header_bold_text {
+        font-size: 2.1vw;
+    }
+
+    button {
+        font-size: 2.1vw;
+        border-radius: 5px;
+    }
+
+    .order_button {
+        border-radius: 5px;
+    }
+
+    .inline_svg_mappin {
+        height: 2.2vw;
+        margin-left: 1vw;
+    }
+
+    .inline_svg_phone {
+        width: 2.2vw;
+        margin-left: 1vw;
+    }
+
+    .nav_link.hideable.one {
+        display: none;
+    }
+
+    .nav_button {
+        height: 2vw;
+        width: 2vw;
+        display: inherit;
+    }
+
+    .menu {
+        height: 5.5vw;
+    }
+
+    .nav_text {
+        font-size: 2.5vw;
+        justify-content: space-between;
+        padding: 0 1.8vw 0 3.6vw;
+    }
+
+    .nav_button {
+        height: 3.75vw;
+        width: fit-content;
+        display: inline;
+    }
+
+    .h2 {
+        font-size: 3.65vw;
+    }
+
+    .h2_with_line_above {
+        font-size: 3.65vw;
+    }
+
+    .h3 {
+        font-size: 3.35vw;
+    }
+
+    .separated_button {
+        border-radius: 5px;
+    }
+    .h1 {
+        font-size: 4.2vw;
+    }
+
+    .h1:before {
+        margin: 6vw auto 3.2vw;
+    }
+
+    .h1:after {
+        margin: 3.2vw auto 6vw;
+    }
+
+    .button_facebook {
+        border-radius: 5px;
+    }
+
+    .button_map {
+        border-radius: 5px;
+        width: 24vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .logo {
+        margin: 0 5vw;
+    }
+
+    .header_buttons {
+        flex-direction: column;
+    }
+
+    .logo_firstword {
+        font-size: 7vw;
+    }
+
+    .logo_otherwords {
+        font-size: 3.22vw;
+    }
+
+    .header_bold_text {
+        font-size: 2.8vw;
+    }
+
+    button {
+        font-size: 2.8vw;
+        border-radius: 4px;
+        padding: 1.15vw 1.6vw;
+        width: 33vw;
+    }
+
+    .inline_svg_mappin {
+        height: 2.9vw;
+        margin-left: 1.25vw;
+    }
+
+    .inline_svg_phone {
+        width: 2.9vw;
+        margin-left: 1.25vw;
+    }
+
+    .nav_link.hideable.two {
+        display: none;
+    }
+
+    .menu {
+        height: 7vw;
+    }
+
+    .nav_text {
+        font-size: 3.1vw;
+        padding: 0 2.225vw 0 4.45vw;
+    }
+
+    .nav_button {
+        height: 4.65vw;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .banner_list_container {
+        width: 41vw;
+    }
+    .banner_list {
+        font-size: 3.3vw;
+    }
+    .banner_images {
+        height: 80vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner_image {
+        height: 50%;
+        width: fit-content;
+    }
+    .banner_left_part_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+    }
+    .three_advantages {
+        display: none;
+    }
+    .three_advantages.mobile {
+        display: flex;
+        height: 35vw;
+        width: 35vw;
+        margin-top: 3.5vw;
+        margin-bottom: 2.2vw;
+        justify-content: space-between;
+    }
+
+    .logo_container {
+        padding-right: 3.96vw;
+    }
+    .advantage_logo {
+        width: 7.57vw;
+    }
+
+    .advantage_logo_bus {
+        width: 9.6vw;
+    }
+
+    .title_advantage_text {
+        font-size: 3.445vw;
+    }
+
+    .additional_text {
+        font-size: 2.375vw;
+    }
+
+    .h2_with_line_above {
+        font-size: 4vw;
+    }
+
+    .h2 {
+        font-size: 4.45vw;
+    }
+
+    .h2_with_line_above {
+        font-size: 4.45vw;
+    }
+
+    .h3 {
+        font-size: 3.95vw;
+    }
+
+    .separated_button_block {
+        font-size: 3.9vw;
+    }
+    .separated_button_block:before {
+        margin: 2.5vw auto 4.45vw;
+    }
+    .separated_button_block:after {
+        margin: 4.45vw auto 8.33vw;
+    }
+    .separated_button {
+        border-radius: 4px;
+        margin-top: 1.7vw;
+        padding: 1.4vw 5.6vw;
+        width: fit-content;
+        height: 7.5vw;
+    }
+
+    .separated_button.shorter {
+        width: fit-content;
+    }
+
+    .inline_svg_catalog {
+        margin-left: 1.6vw;
+        height: 93%;
+    }
+    .tabs_block {
+        margin: 2.5vw 2.1vw;
+    }
+    .tab {
+        width: 38vw;
+        margin: 2.5vw 2.1vw;
+        height: 106vw;
+        padding: 3.61vw;
+    }
+
+    .tab.shorter {
+        height: fit-content;
+    }
+
+    .tab_title {
+        font-size: 4vw;
+        margin: 2.5vw auto 1.67vw;
+    }
+
+    .tab_material {
+        font-size: 2.75vw;
+        margin-bottom: 1.67vw;
+    }
+
+    ul.tab_list {
+        font-size: 2.65vw;
+        padding-left: 1.85vw;
+    }
+
+    .price {
+        font-size: 4vw;
+        margin: 2.22vw auto;
+    }
+    .sale_price_container {
+        font-size: 4vw;
+        margin: 2.22vw auto;
+    }
+    .sale_price {
+        margin: auto 0 auto 1.5vw;
+    }
+    .regular_price {
+        margin: auto 1.5vw auto 0;
+    }
+    .order_button_container {
+        height: 6%;
+    }
+
+    .order_button_container.shorther {
+        height: 6.1vw;
+    }
+    .order_button {
+        font-size: 3.35vw;
+        width: 83%;
+        border-radius: 4px;
+    }
+    .inline_svg_order {
+        height: 70%;
+        margin: auto 0 auto 1vw;
+    }
+    .button_load_more_container {
+        font-size: 3.9vw;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .button_load_more {
+        border-radius: 4px;
+        align-items: center;
+        padding: 1.4vw 5.6vw;
+        font-size: 3.9vw;
+        height: 6.67vw;
+    }
+    .h1 {
+        font-size: 4.9vw;
+    }
+    .h1:before {
+        margin: 7.5vw auto 4vw;
+    }
+    .h1:after {
+        margin: 4vw auto 7.5vw;
+    }
+    .half_tab {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 40%;
+    }
+
+    .main_tab {
+        margin: 0 5.46875vw 5.46875vw;
+        padding: 5.83vw;
+        height: fit-content;
+    }
+
+    .aboutus_image {
+        order: 2;
+        width: 62%;
+        height: fit-content;
+        margin: 4.15vw auto 0;
+    }
+
+    .aboutus_text {
+        font-size: 3.85vw;
+        text-align: left;
+        width: 100%;
+    }
+
+    .artificial_space {
+        display: block;
+        height: 5.83vw;
+    }
+
+    .footer {
+        padding: 5.55vw;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_content_part {
+        display: none;
+    }
+
+    .mobile_big_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        text-align: left;
+        font-size: 3.2vw;
+    }
+
+    .footer_mobile_column {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer_mobile_column.left {
+        align-items: start;
+        width: 50vw;
+    }
+
+    .footer_mobile_column.right {
+        align-items: end;
+        width: 35vw;
+    }
+
+    .worktime {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .button_map {
+        border-radius: 4px;
+        height: fit-content;
+        width: 40.25vw;
+        font-size: 3.2vw;
+        margin-top: 1.7vw;
+    }
+
+    .button_facebook {
+        border-radius: 4px;
+        font-size: 2.8vw;
+        width: 30.25vw;
+        height: 4.8vw;
+        align-items: center;
+        margin-top: 3.6vw;
+        margin-bottom: 1.15vw;
+    }
+
+    .inline_svg_facebook {
+        height: 2.75vw;
+    }
+
+    .facebook_image {
+        width: 14.65vw;
+        height: 15.5vw;
+        margin-left: 1.15vw;
+    }
+
+    .facebook_images_row.first {
+        margin-bottom: 0.575vw;
+    }
+
+    .facebook_images_row.second {
+        margin-top: 0.575vw;
+    }
+
+    .callback.desktop {
+        display: none;
+    }
+
+    .callback.mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+
+    .callback_button {
+        font-size: 2.5vw;
+    }
+
+    .callback_field {
+        height: 8vw;
+        border: 1.5px solid #333333;
+        border-radius: 1.5px;
+    }
+
+    .callback_field_text {
+        font-size: 2.5vw;
+    }
+
+    .callback_text {
+        font-size: 3.2vw;
+        margin: 4.7vw auto 1.15vw;
+        text-align: center;
+    }
+
+    .circle {
+        width: 7.325vw;
+    }
+
+    .circle.single {
+        margin-top: 2vw;
+    }
+
+    .numbers_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 40.25vw;
+        height: fit-content;
+    }
+
+    .bold_text.numbers {
+        text-align: center;
+    }
+
+    .address_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .bold_text {
+        margin-top: 1.7vw;
+    }
+}
+
+@media(max-width: 480px) {
+    .logo {
+        margin: 0 3.6vw;
+    }
+
+    .logo_firstword {
+        font-size: 8.33vw;
+    }
+
+    .logo_otherwords {
+        font-size: 3.88vw;
+    }
+
+    .header_bold_text {
+        font-size: 3.25vw;
+    }
+
+    button {
+        font-size: 3.2vw;
+        border-radius: 3px;
+        padding: 1.4vw 1.95vw;
+        width: 37.8vw;
+    }
+
+    .callback_field {
+        border: 1px solid #333333;
+        border-radius: 1px;
+    }
+
+    .callback_field_text {
+        font-size: 2.3vw;
+    }
+
+    .inline_svg_mappin {
+        height: 3.5vw;
+        margin-left: 1.5vw;
+    }
+
+    .inline_svg_phone {
+        width: 3.5vw;
+        margin-left: 1.5vw;
+    }
+
+    .nav_link.hideable.three {
+        display: none;
+    }
+
+    .menu {
+        height: 9vw;
+    }
+
+    .nav_text {
+        font-size: 3.9vw;
+        padding: 0 2.8vw 0 5.6vw;
+    }
+
+    .nav_button {
+        height: 6vw;
+    }
+
+    .banner {
+        justify-content: space-between;
+    }
+
+    .banner_list_container {
+        width: 46.6vw;
+    }
+
+    .banner_list {
+        font-size: 3.75vw;
+    }
+
+    .banner_images {
+        height: 91vw;
+    }
+
+    .three_advantages.mobile {
+        height: 40vw;
+        width: 40vw;
+        margin-top: 4vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .logo_container {
+        padding-right: 4.5vw;
+    }
+
+    .advantage_logo {
+        width: 8.6vw;
+    }
+
+    .advantage_logo_bus {
+        width: 10.9vw;
+    }
+
+    .title_advantage_text {
+        font-size: 3.92vw;
+    }
+
+    .additional_text {
+        font-size: 2.7vw;
+    }
+
+    .order_button {
+        border-radius: 3px;
+    }
+    .button_map {
+        border-radius: 3px;
+    }
+
+    .h2 {
+        font-size: 4.45vw;
+    }
+    .h2_with_line_above {
+        font-size: 4.45vw;
+    }
+
+    .h3 {
+        font-size: 4.55vw;
+    }
+
+    .separated_button_block {
+        font-size: 3.9vw;
+    }
+    .separated_button_block:before {
+        margin: 2.5vw auto 4.45vw;
+    }
+    .separated_button_block:after {
+        margin: 4.45vw auto 8.33vw;
+    }
+    .separated_button {
+        border-radius: 3px;
+        margin-top: 1.7vw;
+        padding: 1.4vw 5.6vw;
+        width: fit-content;
+        height: 7.5vw;
+    }
+    .inline_svg_catalog {
+        margin-left: 1.6vw;
+        height: 93%;
+    }
+    .h1 {
+        font-size: 5.55vw;
+    }
+    .h1:before {
+        margin: 8.33vw auto 4.45vw;
+    }
+
+    .h1:after {
+        margin: 4.45vw auto 8.33vw;
+    }
+}
+
+@media(max-width: 240px) {
+    .logo {
+        margin: 0 2vw;
+    }
+    .header_bold_text {
+        font-size: 3vw;
+    }
+    button {
+        font-size: 3vw;
+    }
+}
