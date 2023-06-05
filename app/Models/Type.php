@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 
-class Type
+class Type extends Model
 {
+    use HasFactory;
+
     public static function get_all($dir): array
     {
         $path = resource_path("/catalogs/{$dir}/");
