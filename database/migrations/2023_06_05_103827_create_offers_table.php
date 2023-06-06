@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
             $table->integer('number')->unique();
-            $table->integer('type_id');
+            $table->foreignId('type_id');
             $table->string('photo_path')->nullable()->default('');
             $table->text('components');
             $table->text('description')->nullable()->default('');
