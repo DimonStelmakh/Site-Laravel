@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('specials', function (Blueprint $table) {
             $table->id();
             $table->string('title')->unique();
+            $table->string('eng_code')->unique();
             $table->integer('order')->unique();
             $table->timestamps();
         });

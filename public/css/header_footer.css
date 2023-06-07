@@ -23,6 +23,18 @@ button {
     border: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.head {
+    color: #333333;
+}
+
+.head:visited {
+    color: #333333;
+}
+
 button:hover {
     background-color: #444444;
 }
@@ -120,7 +132,6 @@ button:active {
 
 .nav_link {
     color: #333333;
-    text-decoration: none;
     margin: 0;
 }
 

@@ -10,4 +10,9 @@ class Special extends Model
     use HasFactory;
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
+
+    public function offers()
+    {
+        return $this->belongsToMany(Offer::class, 'offer_special', 'special_id', 'offer_id');
+    }
 }

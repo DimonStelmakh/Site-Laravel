@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdditionalPages;
+use App\Http\Controllers\StaticPagesController;
 use App\Models\Type;
+use App\Models\Special;
+use App\Models\Offer;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +18,18 @@ use App\Models\Type;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $popular_offers = Special::find(1)->offers->all(); // всі Offers які popular
+    $popular_offers_ids = [];
+    foreach ($popular_offers as $offer) {
+        $popular_offers_ids[] = $offer->id;
+    }
+    $discounted_offers = Special::find(2)->offers->all(); // всі Offers які discounted
+
+    return view('home', [
+        'popular_offers' => $popular_offers,
+        'popular_offers_ids' => $popular_offers_ids,
+        'discounted_offers' => $discounted_offers
+    ]);
 });
 
 Route::get('/about_us', function () {
@@ -24,16 +37,38 @@ Route::get('/about_us', function () {
 });
 
 Route::get('/catalog', function () {
-    $types = Type::get_all('wraps');
+    $types = Type::all();
     return view('catalog_menu', ['all_types' => $types]);
 });
 
-Route::get('/catalog/{type}', function ($type) {
-    $offers = Type::get_all($type);
-    $type_name = Type::translate($type);
-    return view('catalog', ['type_name' => $type_name, 'offers' => $offers]);
+Route::get('/catalog/{slug}', function ($slug) {
+    $popular_offers = Special::find(1)->offers->all();
+    $popular_offers_ids = [];
+    foreach ($popular_offers as $offer) {
+        $popular_offers_ids[] = $offer->id;
+    }
+    if (in_array("$slug", ['popular', 'discounted'])) {
+        if ($slug == 'popular') {
+            $special_id = 1;
+        }
+        else {
+            $special_id = 2;
+        }
+        $special = Special::find($special_id);
+        return view('specials', [
+            'special' => $special,
+            'special_offers' => $special->offers,
+            'test' => $special_id,
+            'popular_offers_ids' => $popular_offers_ids
+        ]);
+    }
+    else {
+        $type = Type::where('eng_code', $slug)->first(); // один інстанс класу Type
+        return view('catalog', ['type' => $type, 'popular_offers_ids' => $popular_offers_ids]);
+    }
+
 })->where('type', '[A-z_-]+');
 
 
-Route::get('/map', [AdditionalPages::class, 'map']);
-Route::post('/submitted', [AdditionalPages::class, 'submitted']);
+Route::get('/map', [StaticPagesController::class, 'map']);
+Route::post('/submitted', [StaticPagesController::class, 'submitted']);

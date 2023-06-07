@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('offer_special', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('offer_id');
-            $table->foreignId('special_id');
+            $table->foreignId('offer_id')->constrained();
+            $table->foreignId('special_id')->constrained();
             $table->timestamps();
         });
     }

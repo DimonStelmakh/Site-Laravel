@@ -15,11 +15,14 @@ return new class extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
-            $table->integer('number')->unique();
+            $table->integer('number');
             $table->foreignId('type_id');
-            $table->string('photo_path')->nullable()->default('');
+            $table->integer('price');
+            $table->integer('sale_price')->nullable();
+            $table->string('photo_path')->nullable();
+            $table->string('material');
             $table->text('components');
-            $table->text('description')->nullable()->default('');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

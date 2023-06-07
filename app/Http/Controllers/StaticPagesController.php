@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Special;
 
-class AdditionalPages extends Controller
+class StaticPagesController extends Controller
 {
     public function submitted()
     {

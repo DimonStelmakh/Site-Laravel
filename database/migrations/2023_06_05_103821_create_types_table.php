@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->id();
             $table->string('title')->unique();
+            $table->string('singular_title')->unique();
+            $table->string('eng_code')->unique();
             $table->string('wrap_path')->nullable()->default('');
             $table->timestamps();
         });
