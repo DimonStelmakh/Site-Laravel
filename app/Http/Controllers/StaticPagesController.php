@@ -16,4 +16,8 @@ class StaticPagesController extends Controller
     {
         return view('map');
     }
+
+    public function about_us() {
+        return view('about_us');
+    }
 }
