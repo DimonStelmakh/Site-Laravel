@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Special;
+use App\Models\Offer;
 use App\Models\Type;
 
 class CatalogsController extends Controller
@@ -39,5 +40,23 @@ class CatalogsController extends Controller
     public function menu() {
         $types = Type::all();
         return view('catalog_menu', ['all_types' => $types]);
+    }
+
+    public function offer($slug) {
+        $type = [];
+        $number = [];
+        foreach (str_split($slug) as $char) {
+            if (!is_numeric($char)) {
+                $type[] = $char;
+            }
+            else {
+                $number[] = $char;
+            }
+        }
+        $type = Type::where('eng_code', implode($type))->first();
+        $number = intval(implode($number));
+
+        $offer = Offer::where('type_id', $type->id)->where('number', $number)->first();
+        return view('offer', ['offer' => $offer, 'type' => $type]);
     }
 }

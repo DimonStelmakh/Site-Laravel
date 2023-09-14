@@ -20,8 +20,7 @@ Route::get('/', [LandingController::class, 'home']);
 
 Route::get('/catalog', [CatalogsController::class, 'menu']);
 Route::get('/catalog/{slug}', [CatalogsController::class, 'catalog'])->where('slug', '[A-z_-]+');
-
-Route::get('/offer', [StaticPagesController::class, 'offer']); // temporarily in the Static Pages (in Controllers too)
+Route::get('/offer/{slug}', [CatalogsController::class, 'offer']);
 
 Route::get('/map', [StaticPagesController::class, 'map']);
 Route::get('/about_us', [StaticPagesController::class, 'about_us']);

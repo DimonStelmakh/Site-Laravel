@@ -21,10 +21,6 @@ class StaticPagesController extends Controller
         return view('about_us');
     }
 
-    public function offer() {
-        return view('offer');
-    }
-
     public function thank_you() {
         return view('thank_you');
     }
