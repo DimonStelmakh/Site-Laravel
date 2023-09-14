@@ -20,4 +20,12 @@ class StaticPagesController extends Controller
     public function about_us() {
         return view('about_us');
     }
+
+    public function offer() {
+        return view('offer');
+    }
+
+    public function thank_you() {
+        return view('thank_you');
+    }
 }

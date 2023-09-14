@@ -56,3 +56,123 @@
     width: fit-content;
     margin-left: 1.562vw;
 }
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    margin: 4vw 2vw;
+}
+
+.offer_photo {
+    width: 35vw;
+    padding: 0 2vw;
+    /*height: 40vw;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    width: 60vw;
+    margin-left: 2vw;
+}
+
+.offer_title {
+    margin-bottom: 1vw;
+}
+
+.offer_other_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.offer_infoblock {
+    height: 100%;
+    width: 30%;
+    margin-right: 10%;
+    font-size: 1.875vw;
+}
+
+.offer_infoblock.two {
+    width: 50%;
+}
+
+.offer_full_picture {
+    width: 100%;
+}
+
+.order_button.offer {
+    height: 4vw;
+    width: fit-content;
+    margin: 1vw 0;
+    align-items: center;
+
+}
+
+.h2.offer {
+    text-align: left;
+    margin: 0;
+}
+
+.vertically_centered_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.drop-down_container {
+    display: block;
+}
+.drop-down_box {
+    width: 16vw;
+    height: 3vw;
+    font-family: inherit;
+    font-size: 1.875vw;
+}
+
+.drop-down_box.purpose {
+    margin-bottom: 0.9375vw;
+}
+
+.classic {
+    align-items: start;
+}
+
+.classic.ofr {
+    width: 30%;
+    margin-right: 10%;
+}
+
+.middle_level_offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+}
+
+.price.ofr {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
+input[type=checkbox] {
+    accent-color: #333333;
+    height: 0.9375rem; /* 15px */
+    width: 0.9375rem; /* 15px */
+}

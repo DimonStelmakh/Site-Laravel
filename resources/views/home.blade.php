@@ -80,7 +80,7 @@
 @endsection
 @section('content')
     <section>
-        <h2><a class="head" href="/catalog/popular">Найпопулярніші комплектації</a></h2>
+        <h2 class="clickable"><a class="head" href="/catalog/popular">Найпопулярніші комплектації</a></h2>
         <div class="tabs_block">
             @foreach($popular_offers as $offer)
                 <div class="tab">
@@ -115,7 +115,7 @@
             @endforeach
         </div>
 
-        <h2 class="custom_h2 with_line_above"><a class="head" href="/catalog/discounted">Акційні комплектації</a></h2>
+        <h2 class="clickable custom_h2 with_line_above"><a class="head" href="/catalog/discounted">Акційні комплектації</a></h2>
         <div class="tabs_block">
             @foreach($discounted_offers as $offer)
                 <div class="tab">
