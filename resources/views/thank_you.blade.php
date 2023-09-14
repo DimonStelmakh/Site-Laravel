@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('content')
-    <h2>Дякуємо! Замовлення прийнято!</h2>
-    <h3>Ми зв'яжемося з Вами найближчим часом!</h3>
+    <h2>Замовлення прийнято!</h2>
+    <h3>Дякуємо! Ми зв'яжемося з Вами найближчим часом!</h3>
     <div class="separated_button_block">
         Повернутися назад
         <a class="separated_button shorter" href="/">

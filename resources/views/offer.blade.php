@@ -11,6 +11,7 @@
             </div>
             <div class="middle_level_offer">
                 <form class="classic ofr" action="/thank_you" id="thank you" method="post">
+                    @csrf
                     <button class="order_button offer">
                         Замовити
                         <img class="inline_svg_order" src="/storage/images/svg/cut_order.svg" alt=""/>
