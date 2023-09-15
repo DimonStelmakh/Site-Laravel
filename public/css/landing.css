@@ -208,7 +208,7 @@
 .intab_picture_container {
     position: relative;
     height: fit-content;
-    width: fit-content;
+    width: 100%;
 }
 
 .intab_picture {
@@ -264,15 +264,29 @@ ul.tab_list {
     margin: 1.953125vw auto;
 }
 
+.sale_price_container.ofr {
+    margin: 0 auto;
+}
+
 .regular_price {
     color: #979797;
     text-decoration-line: line-through;
     margin: auto 1.171875vw auto 0;
 }
 
+.regular_price.ofr {
+    font-size: 2.8vw;
+    margin-right: 1.5vw;
+}
+
 .sale_price {
     color: #000000;
     margin: auto 0 auto 1.171875vw;
+}
+
+.sale_price.ofr {
+    font-size: 2.8vw;
+    margin-left: 1.5vw;
 }
 
 .order_button_container {

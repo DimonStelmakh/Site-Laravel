@@ -153,7 +153,7 @@ button:active {
 }
 
 .nav_link:hover {
-    box-shadow: inset 16rem 0 0 0 #333333;
+    box-shadow: inset 20rem 0 0 0 #333333;
     color: rgba(229, 229, 229, 1);
     /*color: #000000;*/
 }

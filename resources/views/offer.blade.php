@@ -7,7 +7,7 @@
         </div>
         <div class="offer_information">
             <div class="offer_title">
-                <h2 class="h2 offer">{{ $type->singular_title }} {{ $offer->number }}</h2>
+                <h2 class="h2 offer">{{ $type->singular_title }} №{{ $offer->number }}</h2>
             </div>
             <div class="middle_level_offer">
                 <form class="classic ofr" action="/thank_you" id="thank you" method="post">
@@ -18,7 +18,16 @@
                     </button>
                 </form>
                 <div class="price ofr">
-                    {{ $offer->price }}₴
+                    @if(is_null($offer->sale_price))
+                        {{ $offer->price }} ₴
+                    @else
+                        <div class="sale_price_container ofr">
+                            <a href="/catalog/discounted">
+                                <div class="regular_price ofr">{{ $offer->price }} ₴</div>
+                            </a>
+                            <div class="sale_price ofr">{{ $offer->sale_price }} ₴</div>
+                        </div>
+                    @endif
                 </div>
             </div>
             <div class="offer_other_info">

@@ -24,4 +24,21 @@ class StaticPagesController extends Controller
     public function thank_you() {
         return view('thank_you');
     }
+
+    /* Temporal: */
+    public function delivery_and_payment() {
+        return view('in_development');
+    }
+
+    public function installation() {
+        return view('in_development');
+    }
+
+    public function warranty() {
+        return view('in_development');
+    }
+
+    public function news() {
+        return view('in_development');
+    }
 }

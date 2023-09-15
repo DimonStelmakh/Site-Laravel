@@ -68,3 +68,16 @@ h3 {
     font-size: 2.75vw;
     color: #333333;
 }
+
+.big_svg_container {
+    display: block;
+    margin: 5vw auto 0;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.big_svg {
+    align-self: center;
+    width: 5vw;
+}

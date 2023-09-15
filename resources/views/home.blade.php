@@ -80,17 +80,23 @@
 @endsection
 @section('content')
     <section>
-        <h2 class="clickable"><a class="head" href="/catalog/popular">Найпопулярніші комплектації</a></h2>
+        <h2><a class="head" href="/catalog/popular">Найпопулярніші комплектації</a></h2>
         <div class="tabs_block">
             @foreach($popular_offers as $offer)
                 <div class="tab">
                     <div class="intab_picture_container">
-                        <img class="intab_picture" src={{ $offer->photo_path }} alt="" />
+                        <a href="/offer/{{ $offer->types->eng_code }}{{$offer->number}}">
+                            <img class="intab_picture" src={{ $offer->photo_path }} alt="" />
+                        </a>
                         <a href="/catalog/popular">
                             <img class="star_svg_popular" src="/storage/images/svg/star-svgrepo-com.svg" alt=""/>
                         </a>
                     </div>
-                    <div class="tab_title">{{ $offer->types->singular_title }} №{{ $offer->number }}</div>
+                    <div class="tab_title">
+                        <a class="head" href="/offer/{{ $offer->types->eng_code }}{{$offer->number}}">
+                            {{ $offer->types->singular_title }} №{{ $offer->number }}
+                        </a>
+                    </div>
                     <div class="tab_material">Матеріал: {{ $offer->material }}</div>
                     <ul class="tab_list">
                         @foreach(explode(', ', $offer->components) as $component)
@@ -127,7 +133,11 @@
                             </a>
                         @endif
                     </div>
-                    <div class="tab_title">{{ $offer->types->singular_title }} №{{ $offer->number }}</div>
+                    <div class="tab_title">
+                        <a class="head" href="/offer/{{ $offer->types->eng_code }}{{$offer->number}}">
+                            {{ $offer->types->singular_title }} №{{ $offer->number }}
+                        </a>
+                    </div>
                     <div class="tab_material">Матеріал: {{ $offer->material }}</div>
                     <ul class="tab_list">
                         @foreach(explode(', ', $offer->components) as $component)

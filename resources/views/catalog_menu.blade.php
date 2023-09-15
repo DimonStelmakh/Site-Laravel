@@ -8,7 +8,7 @@
         <div class="tabs_block">
             @foreach ($all_types as $type)
                 <div class="tab shorter">
-                    <img class="intab_picture" src={{ $type->wrap_path }} alt="" />
+                    <img class="intab_picture" alt="" src={{ $type->wrap_path }} />
                     <div class="tab_title shorther">{{ $type->title }}</div>
                     <div class="price shorther">Від {{ $type->getLowestPrice() ?? 0 }} ₴</div>
                     <div class="order_button_container shorther">

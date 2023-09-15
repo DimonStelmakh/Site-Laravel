@@ -10,14 +10,20 @@
                 @foreach ($type->offers as $offer)
                     <div class="tab shorter">
                         <div class="intab_picture_container">
-                            <img class="intab_picture" src={{ $offer->photo_path }} alt="" />
+                            <a class="head" href="/offer/{{ $type->eng_code }}{{$offer->number}}">
+                                <img class="intab_picture" alt="" src={{ $offer->photo_path }} />
+                            </a>
                             @if(in_array($offer->id, $popular_offers_ids))
                                 <a href="/catalog/popular">
                                     <img class="star_svg_popular" src="/storage/images/svg/star-svgrepo-com.svg" alt=""/>
                                 </a>
                             @endif
                         </div>
-                        <div class="tab_title shorther">{{ $type->singular_title }} №{{ $offer->number }}</div>
+                        <div class="tab_title shorther">
+                            <a class="head" href="/offer/{{ $type->eng_code }}{{$offer->number}}">
+                                {{ $type->singular_title }} №{{ $offer->number }}
+                            </a>
+                        </div>
                         @if(is_null($offer->sale_price))
                             <div class="price shorther">{{ $offer->price }} ₴</div>
                         @else

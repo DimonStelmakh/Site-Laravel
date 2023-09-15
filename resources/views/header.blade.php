@@ -34,10 +34,10 @@
             <div class="nav_text">
                 <a class="nav_link" href="/">Головна</a>
                 <a class="nav_link" href="/catalog">Каталог</a>
-                <a class="nav_link hideable two" href="#">Доставка і оплата</a>
-                <a class="nav_link" href="#">Установка</a>
-                <a class="nav_link hideable three" href="#">Гарантія</a>
-                <a class="nav_link hideable one" href="#">Новини</a>
+                <a class="nav_link hideable two" href="/delivery_and_payment">Доставка і оплата</a>
+                <a class="nav_link" href="/installation">Установка</a>
+                <a class="nav_link hideable three" href="/warranty">Гарантія</a>
+                <a class="nav_link hideable one" href="/news">Новини</a>
                 <a class="nav_link" href="/about_us">Про нас</a>
                 <a class="nav_button" href="#">
                     <img class="lines_svg" src="/storage/images/svg/lines-svgrepo-com.svg" alt=""/>

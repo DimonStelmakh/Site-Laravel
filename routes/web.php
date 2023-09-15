@@ -24,5 +24,11 @@ Route::get('/offer/{slug}', [CatalogsController::class, 'offer']);
 
 Route::get('/map', [StaticPagesController::class, 'map']);
 Route::get('/about_us', [StaticPagesController::class, 'about_us']);
+Route::get('/delivery_and_payment', [StaticPagesController::class, 'delivery_and_payment']);
+Route::get('/installation', [StaticPagesController::class, 'installation']);
+Route::get('/warranty', [StaticPagesController::class, 'warranty']);
+Route::get('/news', [StaticPagesController::class, 'news']);
+
 Route::post('/submitted', [StaticPagesController::class, 'submitted']);
 Route::post('/thank_you', [StaticPagesController::class, 'thank_you']);
+
